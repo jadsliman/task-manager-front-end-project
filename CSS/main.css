@@ -1,0 +1,118 @@
+/* Global Rules */
+/* Global Variables */
+:root {
+    --main-color-1: #83ccff;
+    --main-color-2: #16537e;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 65%;
+    margin: 20px auto;
+    opacity: 0.7;
+}
+
+/* Mobile Screens */
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Small Screens */
+
+@media (min-width: 767px) {
+    .container {
+        width: 703px;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .container {
+        width: 928px;
+    }
+
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+
+/* ------------------------------------------------ */
+
+/* Entering */
+
+.entering,
+.tasks {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.entering .container,
+.tasks .container .task {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+
+.entering .container .enter-task,
+.tasks .container .task .task-title {
+    width: 70%;
+}
+
+.entering .container .enter-task {
+    color: var(--main-color-2);
+    background-color: #83ccff4a;
+}
+
+.entering .container .enter-task:focus {
+    outline-color: var(--main-color-1);
+}
+
+.entering .container .create,
+.tasks .container .delete {
+    color: white;
+    width: 10%;
+}
+
+.entering .container .create {
+    background-color: var(--main-color-1);
+    color: white;
+}
+
+.tasks .container .delete {
+    background-color: #ff8383;
+
+}
+
+.entering .container .enter-task,
+.entering .container .create,
+.tasks .container .delete,
+.tasks .container .task .task-title {
+    border: none;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tasks .container .task .task-title {
+    display: inline;
+    padding: 14px 25px;
+    background-color: #ffb7834a;
+    color: #ef7f36;
+    font-family: sans-serif;
+}
